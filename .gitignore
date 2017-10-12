@@ -3,3 +3,10 @@ Debug.win32/
 Release.win32/
 *.sdf
 *.suo
+*.opensdf
+
+
+########
+build/
+.idea/
+*.iml
