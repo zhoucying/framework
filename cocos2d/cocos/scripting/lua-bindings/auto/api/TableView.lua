@@ -21,13 +21,6 @@
         
 --------------------------------
 -- 
--- @function [parent=#TableView] scrollViewDidZoom 
--- @param self
--- @param #cc.ScrollView view
--- @return TableView#TableView self (return value: cc.TableView)
-        
---------------------------------
--- 
 -- @function [parent=#TableView] _updateContentSize 
 -- @param self
 -- @return TableView#TableView self (return value: cc.TableView)
@@ -65,6 +58,13 @@
 -- reloads data from data source.  the view will be refreshed.
 -- @function [parent=#TableView] reloadData 
 -- @param self
+-- @return TableView#TableView self (return value: cc.TableView)
+        
+--------------------------------
+-- 
+-- @function [parent=#TableView] scrollViewDidZoom 
+-- @param self
+-- @param #cc.ScrollView view
 -- @return TableView#TableView self (return value: cc.TableView)
         
 --------------------------------

@@ -17,7 +17,7 @@
 -- js NA
 -- @function [parent=#Director] pushProjectionMatrix 
 -- @param self
--- @param #unsigned long index
+-- @param #unsigned int index
 -- @return Director#Director self (return value: cc.Director)
         
 --------------------------------
@@ -26,7 +26,7 @@
 -- js NA
 -- @function [parent=#Director] popProjectionMatrix 
 -- @param self
--- @param #unsigned long index
+-- @param #unsigned int index
 -- @return Director#Director self (return value: cc.Director)
         
 --------------------------------
@@ -44,7 +44,7 @@
 -- js NA
 -- @function [parent=#Director] loadProjectionIdentityMatrix 
 -- @param self
--- @param #unsigned long index
+-- @param #unsigned int index
 -- @return Director#Director self (return value: cc.Director)
         
 --------------------------------
@@ -233,7 +233,7 @@
 -- @function [parent=#Director] multiplyProjectionMatrix 
 -- @param self
 -- @param #mat4_table mat
--- @param #unsigned long index
+-- @param #unsigned int index
 -- @return Director#Director self (return value: cc.Director)
         
 --------------------------------
@@ -474,7 +474,7 @@
 -- @function [parent=#Director] loadProjectionMatrix 
 -- @param self
 -- @param #mat4_table mat
--- @param #unsigned long index
+-- @param #unsigned int index
 -- @return Director#Director self (return value: cc.Director)
         
 --------------------------------
@@ -483,7 +483,7 @@
 -- js NA
 -- @function [parent=#Director] initProjectionMatrixStack 
 -- @param self
--- @param #unsigned long stackCount
+-- @param #unsigned int stackCount
 -- @return Director#Director self (return value: cc.Director)
         
 --------------------------------
