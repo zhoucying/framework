@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>E439935D-B2A2-46AE-856D-2AA408428F33</ProjectGuid>
     <!--$guid1$-->
-    <ProjectHome>.</ProjectHome>
+    <ProjectHome>..\Resources\</ProjectHome>
     <StartupFile>
     </StartupFile>
     <SearchPath>
@@ -25,7 +25,7 @@
     <Folder Include="lua\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="lua\mian.lua" />
+    <Compile Include="lua\main.lua" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
 </Project>

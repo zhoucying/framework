@@ -18,7 +18,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "librecast", "..\cocos2d\ext
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libluacocos2d", "..\cocos2d\cocos\scripting\lua-bindings\proj.win32\libluacocos2d.vcxproj", "{9F2D6CE6-C893-4400-B50C-6DB70CC2562F}"
 EndProject
-Project("{5697748A-77EF-44CA-8824-4F5637E5945B}") = "lua", "..\Resources\lua.luaproj", "{E439935D-B2A2-46AE-856D-2AA408428F33}"
+Project("{5697748A-77EF-44CA-8824-4F5637E5945B}") = "lua_script", ".\lua_script.luaproj", "{E439935D-B2A2-46AE-856D-2AA408428F33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
