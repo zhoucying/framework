@@ -1,5 +1,7 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
+#include "CCLuaEngine.h"
+#include "lua_module_register.h"
 
 // #define USE_AUDIO_ENGINE 1
 // #define USE_SIMPLE_AUDIO_ENGINE 1
@@ -93,11 +95,16 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     register_all_packages();
 
-    // create a scene. it's an autorelease object
     auto scene = HelloWorld::createScene();
-
-    // run
     director->runWithScene(scene);
+
+	LuaEngine* engine = LuaEngine::getInstance();
+	ScriptEngineManager::getInstance()->setScriptEngine(engine);
+	lua_State* L = engine->getLuaStack()->getLuaState();
+	lua_module_register(L);
+
+	if (engine->executeScriptFile("lua/main.lua"))
+		return false;
 
     return true;
 }
